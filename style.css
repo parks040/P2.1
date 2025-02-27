@@ -1,0 +1,13 @@
+/* STYLE FOR THE INPUT FIELD */
+#charInput {
+}
+
+/* STYLE FOR THE SUBMIT BUTTON */
+#submitButton {
+}
+
+/* STYLE FOR THE IMAGE */
+#displayedImage {
+  display: none; /* This line is mandatory */
+  width: 100px;
+}
