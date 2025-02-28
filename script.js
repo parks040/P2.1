@@ -63,4 +63,41 @@ const images = [
       imgElement.style.display = "block";
     }
   }
+  // Function to adjust image size
+function adjustImageSize() {
+  var image = document.getElementById("displayedImage");
+ 
+  var slider = document.getElementById("myRange");
+  
+  var size = slider.value * 5; // Scale up the size
+  console.log("slider value:", slider.value); 
+  console.log("  image:",   image); 
+  
+  image.style.width = size + "px";
+  image.style.height = "auto";
+  document.body.style.backgroundColor = "red";
+}
+
+// Function to apply image filter
+function applyImageFilter() {
+  var image = document.getElementById("displayedImage");
+  var filterSelect = document.getElementById("filterSelect");
+  var filterValue = filterSelect.value;
+  
+  if (filterValue === "grayscale") {
+    image.style.filter = "grayscale(100%)";
+  } else if (filterValue === "invert") {
+    image.style.filter = "invert(100%)";
+  } else if (filterValue === "sepia") {
+    image.style.filter = "sepia(100%)";
+  } else {
+    image.style.filter = "none";
+  }
+}
+
+// Attach event listeners
+document.getElementById("myRange").addEventListener("input", adjustImageSize);
+document.getElementById("filterSelect").addEventListener("change", applyImageFilter);
+
+
   

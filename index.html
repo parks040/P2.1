@@ -13,10 +13,29 @@
 
     <!-- BUTTON TO DISPLAY IMAGE -->
     <button onclick="displayImage()" id="submitButton">Show Image</button>
-
+  
+  
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+      <select id="filterSelect">
+        <option value="none">None</option>
+        <option value="grayscale">Grayscale</option>
+        <option value="invert">Invert</option>
+        <option value="sepia">Sepia</option>
+      </select>
     <!-- IMAGE TO DISPLAY -->
     <img id="displayedImage" src="" alt="Displayed Image" />
 
     <!-- Image Display Script Below -->
-  </body>
+
+  <!--fied for users to write sentence-->
+  <!-- <textarea id="userInput" name="w3review" rows="4" cols="50"></textarea> -->
+  <!--submit button-->
+
+  
+  
+  <div><img id="result" src="" /></div>
+</body>
 </html>
+
